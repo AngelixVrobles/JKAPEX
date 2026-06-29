@@ -822,7 +822,7 @@ h1, h2, h3, h4 {
   .nav, .header__actions .btn { display: none; }
   .nav-toggle { display: inline-flex; }
   .hero__inner { grid-template-columns: 1fr; }
-  .hero__copy { order: 1; }
+  .hero__copy { order: -1; }
   .capcard { max-width: 460px; }
   .about, .cta__inner { grid-template-columns: 1fr; }
   .capstats { grid-template-columns: repeat(2, 1fr); }
@@ -837,8 +837,8 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 600px) {
-  .topbar__badge { font-size: .68rem; }
-  .topbar__inner { gap: .5rem; }
+  .topbar__badge { display: none; }
+  .topbar__inner { justify-content: center; gap: .5rem; }
   .field--split { grid-template-columns: 1fr; }
   .capstats, .steps { grid-template-columns: 1fr; }
   .capstat { border-right: none; border-bottom: 1px solid var(--line); }
