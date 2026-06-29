@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JK APEX Supply Group Inc — Capability Statement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0d1b2a;
+      --navy-card: #12243a;
+      --apex: #0055a5;
+      --apex-100: #e7eff7;
+      --ink: #1a232e;
+      --muted: #56606c;
+      --line: #d9dee4;
+      --display: "Libre Franklin", Arial, sans-serif;
+      --body: "IBM Plex Sans", Arial, sans-serif;
+      --mono: "IBM Plex Mono", monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    @page { size: letter; margin: 0; }
+    html, body { width: 8.5in; }
+    body {
+      font-family: var(--body);
+      color: var(--ink);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      font-size: 9.2px;
+      line-height: 1.42;
+    }
+    .sheet { width: 8.5in; min-height: 11in; display: flex; flex-direction: column; }
+
+    .masthead {
+      background: var(--navy);
+      color: #fff;
+      padding: 24px 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    .masthead::after {
+      content: "";
+      position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+      background: linear-gradient(90deg, var(--apex), #2f7dc4);
+    }
+    .brand { display: flex; align-items: center; gap: 13px; }
+    .brand svg { width: 50px; height: 50px; }
+    .brand .name { font-family: var(--display); font-weight: 800; font-size: 24px; line-height: 1; letter-spacing: -.01em; }
+    .brand .name span { color: #4f9fe0; }
+    .brand .sub { font-family: var(--mono); font-weight: 500; font-size: 8.5px; letter-spacing: .26em; color: #9fb0c2; margin-top: 5px; }
+    .brand .tag { font-family: var(--mono); font-size: 8px; letter-spacing: .12em; color: #6fa8da; margin-top: 4px; text-transform: uppercase; }
+    .masthead .title { text-align: right; }
+    .masthead .title h1 { font-family: var(--display); font-weight: 800; font-size: 19px; letter-spacing: .02em; line-height: 1.1; }
+    .masthead .title p { font-family: var(--mono); font-size: 8px; letter-spacing: .22em; text-transform: uppercase; color: #9fb0c2; margin-top: 5px; }
+
+    main { flex: 1; display: grid; grid-template-columns: 1.5fr 1fr; gap: 0; }
+    .col-left { padding: 30px 26px 24px 34px; display: flex; flex-direction: column; justify-content: space-between; }
+    .col-right { padding: 30px 30px 24px 24px; background: #f4f6f8; border-left: 1px solid var(--line); display: flex; flex-direction: column; justify-content: space-between; }
+
+    .block { margin-bottom: 0; }
+    h2 {
+      font-family: var(--mono);
+      font-weight: 600;
+      font-size: 9px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--apex);
+      padding-bottom: 6px;
+      margin-bottom: 9px;
+      border-bottom: 1.5px solid var(--line);
+      display: flex; align-items: center; gap: 7px;
+    }
+    h2 .n { color: var(--navy); }
+    .lead { font-size: 9.6px; line-height: 1.55; color: #2b343f; }
+
+    .comp { columns: 2; column-gap: 16px; }
+    .comp li { list-style: none; position: relative; padding-left: 12px; margin-bottom: 4.5px; break-inside: avoid; font-weight: 500; }
+    .comp li::before { content: ""; position: absolute; left: 0; top: 4.5px; width: 5px; height: 5px; background: var(--apex); border-radius: 1px; transform: rotate(45deg); }
+
+    .diff { list-style: none; }
+    .diff li { position: relative; padding-left: 15px; margin-bottom: 6px; }
+    .diff li b { font-family: var(--display); font-weight: 700; color: var(--navy); }
+    .diff li span { color: var(--muted); }
+    .diff li::before {
+      content: ""; position: absolute; left: 0; top: 1px; width: 9px; height: 9px;
+      background: var(--apex);
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m5 12 4 4 10-10' fill='none' stroke='%23000' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m5 12 4 4 10-10' fill='none' stroke='%23000' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+    }
+
+    .markets { display: flex; flex-wrap: wrap; gap: 6px; }
+    .markets span {
+      font-family: var(--display); font-weight: 600; font-size: 8.6px;
+      color: var(--navy); background: var(--apex-100); border: 1px solid #c9dcef;
+      padding: 4px 9px; border-radius: 4px;
+    }
+
+    h2.light { color: #fff; border-color: rgba(255,255,255,.16); }
+    h2.light .n { color: #6fa8da; }
+    .data-card { background: var(--navy); color: #fff; border-radius: 8px; padding: 15px 16px; margin: -2px 0 15px; }
+    dl.data div { display: flex; justify-content: space-between; gap: 8px; padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,.1); }
+    dl.data div:last-child { border-bottom: none; }
+    dl.data dt { font-family: var(--mono); font-size: 8px; letter-spacing: .06em; text-transform: uppercase; color: #9fb0c2; }
+    dl.data dd { font-family: var(--mono); font-weight: 600; font-size: 9px; color: #fff; text-align: right; }
+    dl.data dd.pend { color: #d8ad4e; }
+
+    .codes { list-style: none; }
+    .codes li { display: grid; grid-template-columns: auto 1fr; gap: 8px; align-items: baseline; padding: 3.5px 0; border-bottom: 1px solid var(--line); }
+    .codes li:last-child { border-bottom: none; }
+    .codes code { font-family: var(--mono); font-weight: 600; font-size: 9px; color: var(--apex); }
+    .codes span { font-size: 8.4px; color: var(--muted); }
+    .codes .pri { color: #1f8f5f; font-family: var(--mono); font-weight: 600; }
+
+    .psc { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+    .psc code {
+      font-family: var(--mono); font-weight: 500; font-size: 8.4px; color: var(--navy);
+      background: #fff; border: 1px solid var(--line); padding: 2.5px 6px; border-radius: 4px;
+    }
+
+    .vehicles ul { list-style: none; }
+    .vehicles li { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; border-bottom: 1px solid var(--line); font-size: 8.8px; color: #333b45; }
+    .vehicles li:last-child { border-bottom: none; }
+    .vehicles b { font-family: var(--mono); font-size: 7.4px; letter-spacing: .04em; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; }
+    .vehicles b.ok { color: #16734a; background: #e3f3ea; border: 1px solid #b6dcc6; }
+    .vehicles b.soon { color: #2f6aa6; background: #e7eff7; border: 1px solid #c9dcef; }
+
+    .commit-box { background: var(--navy); color: #fff; border-radius: 8px; padding: 13px 16px; }
+    .commit-box .lbl { font-family: var(--mono); font-size: 7.5px; letter-spacing: .12em; text-transform: uppercase; color: #6fa8da; display: block; margin-bottom: 6px; }
+    .commit-box p { font-family: var(--display); font-weight: 600; font-size: 9.8px; line-height: 1.5; }
+
+    footer {
+      background: var(--navy); color: #cdd8e4;
+      padding: 13px 34px;
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      font-size: 8.6px;
+    }
+    footer .c { display: flex; gap: 16px; flex-wrap: wrap; }
+    footer .c b { color: #fff; font-family: var(--mono); font-size: 7.5px; letter-spacing: .08em; text-transform: uppercase; display: block; color: #7d8ea0; margin-bottom: 2px; }
+    footer .c a, footer .c span { color: #e6edf4; font-weight: 500; }
+    footer .tag { font-family: var(--mono); letter-spacing: .12em; text-transform: uppercase; color: #6fa8da; font-size: 7.5px; text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="masthead">
+      <div class="brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M8 44c4 7 14 11 24 9 11-2 19-9 21-19-5 7-13 12-23 13-9 1-17-1-22-3z" fill="#9AA3AD"/>
+          <path d="M27 13h7v23c0 6-4 10-10 10-3.5 0-6.5-1.2-8.5-3.4l4.6-5.4c1 1.1 2.2 1.8 3.4 1.8 1.8 0 3-1.2 3-3.6z" fill="#ffffff"/>
+          <path d="M37 13h7v13l9-13h8l-11 15 12 21h-8.5l-8-15-1.5 2v13h-7z" fill="#ffffff"/>
+        </svg>
+        <div>
+          <div class="name">JK <span>APEX</span></div>
+          <div class="sub">SUPPLY GROUP INC</div>
+          <div class="tag">Reliable Supply Solutions</div>
+        </div>
+      </div>
+      <div class="title">
+        <h1>CAPABILITY<br>STATEMENT</h1>
+        <p>Government &amp; Commercial Supply</p>
+      </div>
+    </div>
+
+    <main>
+      <div class="col-left">
+        <div class="block">
+          <h2><span class="n">01</span> Company Overview</h2>
+          <p class="lead">JK APEX Supply Group Inc is a Florida-based supplier specializing in office, janitorial, facility maintenance, safety, and breakroom products for commercial businesses and government agencies. Our mission is to provide quality products, competitive pricing, dependable service, and on-time delivery — while building long-term relationships with the customers and agencies we serve.</p>
+        </div>
+
+        <div class="block">
+          <h2><span class="n">02</span> Core Competencies</h2>
+          <ul class="comp">
+            <li>Office Supplies</li>
+            <li>Janitorial &amp; Cleaning Supplies</li>
+            <li>Facility Maintenance Supplies</li>
+            <li>Safety Products &amp; PPE</li>
+            <li>Breakroom &amp; Food Service</li>
+            <li>Paper Products</li>
+            <li>Ink &amp; Toner</li>
+            <li>Packaging &amp; Shipping Supplies</li>
+            <li>Industrial &amp; MRO Supplies</li>
+            <li>Furniture &amp; Workspace Essentials</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2><span class="n">03</span> Differentiators</h2>
+          <ul class="diff">
+            <li><b>Competitive Pricing.</b> <span>Volume-backed pricing and transparent quotes that hold up against national suppliers.</span></li>
+            <li><b>Reliable Suppliers.</b> <span>A vetted supplier network that keeps the products you depend on in stock.</span></li>
+            <li><b>Fast Order Processing.</b> <span>Quotes returned quickly and orders moving the same business day.</span></li>
+            <li><b>Nationwide Delivery.</b> <span>Dependable, on-time fulfillment to commercial and government sites across the U.S.</span></li>
+            <li><b>Procurement-Focused.</b> <span>Structured to support agency solicitations, purchase cards, and compliant ordering.</span></li>
+            <li><b>Professional Service.</b> <span>A responsive team and a single, accountable point of contact for your account.</span></li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2><span class="n">04</span> Markets Served</h2>
+          <div class="markets">
+            <span>Federal Agencies</span>
+            <span>State &amp; Local Government</span>
+            <span>Education / K-12 &amp; Higher Ed</span>
+            <span>Healthcare &amp; Institutions</span>
+            <span>Commercial Enterprise</span>
+          </div>
+        </div>
+
+        <div class="block commit">
+          <div class="commit-box">
+            <span class="lbl">Our Commitment</span>
+            <p>Quality products, competitive pricing, and dependable on-time delivery on every order — the foundation of long-term relationships with the customers and agencies we serve.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-right">
+        <div class="block">
+          <h2 class="light"><span class="n">●</span> Company Data</h2>
+          <div class="data-card">
+            <dl class="data">
+              <div><dt>Legal Name</dt><dd>JK APEX Supply Group Inc</dd></div>
+              <div><dt>Location</dt><dd>St. Petersburg, FL</dd></div>
+              <div><dt>Business Type</dt><dd>Distributor</dd></div>
+              <div><dt>Primary NAICS</dt><dd>423850</dd></div>
+              <div><dt>SAM.gov</dt><dd class="pend">In Progress</dd></div>
+              <div><dt>UEI</dt><dd class="pend">Pending</dd></div>
+              <div><dt>CAGE Code</dt><dd class="pend">Pending</dd></div>
+              <div><dt>Payment</dt><dd>GPC · PO</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2><span class="n">▸</span> NAICS Codes</h2>
+          <ul class="codes">
+            <li><code>423850</code><span>Service Establishment Equipment &amp; Supplies <b class="pri">· Primary</b></span></li>
+            <li><code>423450</code><span>Medical, Dental &amp; Hospital Equipment</span></li>
+            <li><code>423490</code><span>Other Professional Equipment &amp; Supplies</span></li>
+            <li><code>424120</code><span>Stationery &amp; Office Supplies</span></li>
+            <li><code>423610</code><span>Electrical Apparatus &amp; Wiring Supplies</span></li>
+            <li><code>423840</code><span>Industrial Supplies</span></li>
+            <li><code>423990</code><span>Other Durable Goods</span></li>
+            <li><code>424690</code><span>Other Chemical &amp; Allied Products</span></li>
+            <li><code>541614</code><span>Logistics &amp; Distribution Consulting</span></li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2><span class="n">▸</span> PSC Codes</h2>
+          <div class="psc">
+            <code>7510</code><code>7520</code><code>6530</code><code>6515</code><code>6545</code><code>4240</code><code>7930</code><code>7920</code><code>8540</code><code>9905</code><code>5660</code>
+          </div>
+        </div>
+
+        <div class="block vehicles">
+          <h2><span class="n">▸</span> Contract Vehicles</h2>
+          <ul>
+            <li><span>Open Market / Commercial</span><b class="ok">Available</b></li>
+            <li><span>Government Purchase Card</span><b class="ok">Accepted</b></li>
+            <li><span>Purchase Order (PO)</span><b class="ok">Available</b></li>
+            <li><span>GSA Schedule · Cooperative</span><b class="soon">Planned</b></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="c">
+        <div><b>Email</b><a href="mailto:sales@apexsupplygroupcom.com">sales@apexsupplygroupcom.com</a></div>
+        <div><b>Phone</b><span>(727) ___-____</span></div>
+        <div><b>Location</b><span>St. Petersburg, Florida, USA</span></div>
+        <div><b>Hours</b><span>Mon–Fri · 8:00 AM – 5:00 PM EST</span></div>
+        <div><b>Web</b><span>apexsupplygroupcom.com</span></div>
+      </div>
+      <div class="tag">Quality · Service<br>Reliability</div>
+    </footer>
+  </div>
+</body>
+</html>
