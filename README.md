@@ -15,11 +15,11 @@
 
 ---
 
-## 📌 Qué es
+## Qué es
 
 Sitio corporativo de una sola página (más un *capability statement* dedicado) pensado para **contratación gubernamental y compras B2B**. Comunica capacidades, catálogo de productos, a quién sirve y cómo comprar, con un *call-to-action* claro para solicitar cotización. Desplegado en **dominio propio** (`apexsupplygroupcom.com`) vía GitHub Pages.
 
-## ✨ Secciones
+## Secciones
 
 - **Capabilities** — qué ofrece la empresa de un vistazo.
 - **Products** — categorías: oficina, limpieza/janitorial, instalaciones, seguridad, médico y *breakroom*.
@@ -28,7 +28,7 @@ Sitio corporativo de una sola página (más un *capability statement* dedicado) 
 - **How to Buy** — proceso de compra y solicitud de cotización.
 - **Capability Statement** — página y **PDF descargable** (formato estándar en *government contracting*).
 
-## 🛠️ Stack y enfoque técnico
+## Stack y enfoque técnico
 
 | Aspecto | Detalle |
 |---|---|
@@ -39,16 +39,16 @@ Sitio corporativo de una sola página (más un *capability statement* dedicado) 
 | SEO | `meta description`, Open Graph, `theme-color` y favicon SVG embebido |
 | Despliegue | GitHub Pages + dominio propio (CNAME) |
 
-## 📄 Capability Statement
+## Capability Statement
 
 Incluye un *capability statement* navegable y su versión en **PDF** (`assets/JK-APEX-Capability-Statement.pdf`), el documento que las agencias suelen pedir en procesos de compra pública.
 
 ---
 
-### 📂 Sobre el código
+### Sobre el código
 
 A diferencia de mis proyectos de cliente (privados), **este repositorio es público**: el sitio es navegable en vivo y el código está disponible aquí para revisión.
 
-### 📬 Contacto
+### Contacto
 
 **Angelix Vásquez** · Angelixvrobles1234@outlook.com · [GitHub](https://github.com/AngelixVrobles)
