@@ -51,4 +51,4 @@ A diferencia de mis proyectos de cliente (privados), **este repositorio es públ
 
 ### Contacto
 
-**Angelix Vásquez** · Angelixvrobles1234@outlook.com · [GitHub](https://github.com/AngelixVrobles)
+**Angelix Vásquez** · [GitHub](https://github.com/AngelixVrobles)
